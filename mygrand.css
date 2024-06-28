@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+header {
+    background-color: orange;
+    padding: 0;
+    height: fit-content;
+    position: sticky;
+    display: flex;
+  }
+  
+header h1 {
+   font-size: clamp(1rem, 5vw, 2.5rem); 
+  
+  }
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    
+  }
+  
+  
+nav {
+    flex: 1;
+    text-align: right;
+    position: relative;
+  }
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
+  transition: 0.5s;
+}
+nav a:hover{
+  color: green
+}
+
+
+.logo{
+  flex: 2
+}
+.logsign{
+  flex: 8
+}
+
+  button {
+    
+    border: none;
+    margin: 10px;
+    padding: 10px 25px;
+    color: black;
+    background-color: orange;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.5s;
+    height: 200px;
+    width: 500px;
+  }
+button:hover {
+    background-color: orangered;
+    color: black;
+  }
+.container{
+  margin: 20px;
+
+}
+
+  .footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    color: black;
+    justify-content: center;
+    height: fit-content;
+    padding: 30px;
+    font-size: clamp(1rem, 5vw, 2rem); 
+  }
+
+@media only screen and (max-width:480px){
+  button {
+    
+    border: none;
+    margin: 10px;
+    padding: 10px 25px;
+    color: black;
+    background-color: orange;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.5s;
+    height: 100px;
+    width: 250px;
+  }
+  .container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .logo{
+  flex: 4;
+  text-align: left;
+  padding: 10px;
+ }
+ .logsign{
+  flex: 6;
+  
+ }
+}
