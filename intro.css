@@ -1,0 +1,292 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+header {
+    background-color: rgb(148, 177, 54);
+    padding: 0;
+    height: 8vh;
+    position: sticky;
+    display: flex;
+    
+  }
+  
+.logo img{
+  height: 8vh;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  
+}
+  
+  
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: "Cabin", sans-serif;
+    
+  }
+  
+  
+.logsign nav {
+    flex: 1;
+    text-align: right;
+    position: relative;
+  }
+.mainnavi nav {
+  text-align: left;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
+  transition: 0.5s;
+}
+nav a:hover{
+  color: green
+}
+nav ul li {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  margin-right: 40px;
+  
+}
+ .dot{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #425604;
+  position: absolute;
+  bottom: 130px;
+ }
+
+
+.logo{
+  flex: 2;
+  justify-items: right;
+}
+.mainnavi{
+  flex:4;
+  align-content: center;
+
+}
+.logsign{
+  flex: 4;
+  align-content: center;
+  
+  
+}
+
+
+
+.featintro{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    
+}
+.featbox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 300px;
+    border: 2px solid gray;
+    
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 10px;
+    
+  
+}
+h4{
+    
+    margin:auto;
+    font-size: 23px;
+    padding: 20px;
+    font-style: bold;
+    box-sizing: border-box;
+    color: #425604;
+    font-family: "Cabin", sans-serif
+}
+
+.add{
+    margin-top: 50px;
+    margin-bottom: 27px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+}
+ .aboutus{
+  padding-top: 20px;
+ }
+
+ .aboutus p{
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: "Cabin", sans-serif;
+ }
+
+ .aboutus h1{
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+ }
+
+ .aboutus h3{
+  text-align: left;
+  padding-left: 10px;
+  font-weight: lighter;
+  line-height: 50px;
+  font-style: italic;
+  font-family: "Cabin", sans-serif;
+ }
+.background{
+  display: flex;
+  background-image: linear-gradient(70deg, rgb(216, 229, 175) 55%, rgb(148, 177, 54) 45%);
+  height: 50vh;
+}
+.aboutus{
+  flex:5
+}
+.backgroundimg{
+  flex:5;
+}
+.backgroundimg img{
+  height:50vh
+}
+.footer{
+    width: 100%;
+    height:7vh;
+    background-color: rgb(148, 177, 54);
+    padding-left:20px;
+    padding-top:10px;
+    position: sticky;
+    font-family: "Cabin", sans-serif;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.head img{
+  max-width: 7rem;
+}
+
+.container{
+  height: 100%;
+  width: 250px;
+  position: absolute;
+  background-color: #5B7117;
+  z-index: 2;
+  transition: 0.5s ease;
+  transform: translateX(-250px);
+}
+
+.container .head{
+  border-bottom: 1px solid darkgreen;
+  padding: 30px;
+  text-align: center;
+}
+
+.container ul{
+  width: 100%;
+  list-style: none;
+
+}
+.container ul li{
+  display: block;
+  width:100%;
+
+}
+
+.container ul li a{
+  color:black;
+  padding: 15px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s ease;
+  overflow: hidden;
+
+}
+
+.container ul li:hover{
+  background-color: rgba(148, 177, 54 );
+  transition: 0.4s ease;
+}
+
+input{
+  appearance: none;
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+span{
+  position: absolute;
+  right: -40px;
+  top: 30px;
+  font-size: 40px;
+  border-radius: 3px;
+  color: #494242;
+  padding: 3px 8px;
+  cursor: pointer;
+  background: #94B136;
+}
+
+#check:checked ~ .container{
+  transform: translateX(0);
+}
+
+#check:checked ~ .container #bars{
+  display: none;
+}
+
+@media only screen and (max-width:480px){
+  button {
+    
+    border: none;
+    margin: 10px;
+    padding: 10px 25px;
+    color: black;
+    background-color: orange;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.5s;
+    height: 100px;
+    width: 250px;
+  }
+  .container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .logo{
+  flex: 4;
+  text-align: left;
+  padding: 10px;
+ }
+ .logsign{
+  flex: 6;
+  
+ }
+}
